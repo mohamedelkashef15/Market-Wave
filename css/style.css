@@ -3,7 +3,7 @@
 :root {
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
-  --light-gray: #545559;
+  --light-gray: #f4f4f4;
   --dark-gray: #222222;
   --light-orange: #ff7f22;
   --dark-blue: #0A2540;
@@ -17,6 +17,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  height: 5000px;
 }
 
 ul {
@@ -142,5 +143,29 @@ a {
   border-bottom: 2px solid var(--light-sky-blue);
 }
 
-
 /* Header End */
+
+/* Clients Start */
+#clients {
+  padding: 3rem 0;
+  background-color: var(--light-gray);
+}
+
+#clients h2 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#clients .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#clients .row img {
+  width: 100%;
+}
+
+/* Clients End */
