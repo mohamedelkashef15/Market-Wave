@@ -17,7 +17,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 7000px;
 }
 
 ul {
@@ -189,14 +188,16 @@ p {
 #experience,
 #help,
 #projects,
-#work {
+#work,
+#blog {
   padding: 7rem 0;
 }
 
 #services h2,
 #experience h2,
 #projects h2,
-#work h2 {
+#work h2,
+#blog h2 {
   font-size: 46px;
   font-weight: 600;
   text-align: center;
@@ -206,7 +207,8 @@ p {
 #services .container>p,
 #experience .container>p,
 #projects>p,
-#work .container>p {
+#work .container>p,
+#blog>p {
   color: var(--light-sky-blue);
   font-size: 20px;
   margin: 20px 0 50px;
@@ -325,16 +327,19 @@ p {
 
 /* Projects Start */
 
-#projects {
+#projects,
+#blog {
   text-align: center;
 }
 
-#projects .row {
+#projects .row,
+#blog .row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-#projects .row .col .col-content {
+#projects .row .col .col-content,
+#blog .row .col .col-content {
   background-color: #fff;
   padding: 2rem;
   max-width: 80%;
@@ -342,22 +347,26 @@ p {
   transform: translateY(-50%);
 }
 
-#projects .row .col .col-content h3 {
+#projects .row .col .col-content h3,
+#blog .row .col .col-content h3 {
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-#projects .row .col .col-content p {
+#projects .row .col .col-content p,
+#blog .row .col .col-content p {
   font-size: 14px;
 }
 
-#projects .row img {
+#projects .row img,
+#blog .row img {
   width: 100%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-#projects .row img:hover {
+#projects .row img:hover,
+#blog .row img:hover {
   filter: brightness(0.5);
 }
 
@@ -391,3 +400,55 @@ p {
 }
 
 /* Work End */
+/* Footer Start */
+#footer {
+  background-color: var(--dark-blue);
+  color: #fff;
+}
+
+#footer .row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  padding: 5rem 0 3rem;
+}
+
+#footer .row .col h3 {
+  font-weight: 500;
+  color: var(--light-sky-blue);
+  margin-bottom: 20px;
+}
+
+#footer .row .col ul li {
+  margin: 15px 0;
+}
+
+#footer .row .col ul li a {
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#footer .row .col ul li a:hover {
+  color: var(--light-sky-blue);
+}
+
+#footer .row img {
+  max-width: 220px;
+}
+
+#footer hr {
+  border: 1px solid #545559;
+}
+
+#footer .copyright {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+#footer .copyright a {
+  color: var(--light-sky-blue);
+  font-weight: 500;
+}
+
+/* Footer End */
