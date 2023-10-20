@@ -74,6 +74,10 @@ p {
   padding-bottom: 5px;
 }
 
+.text-primary {
+  color: var(--light-orange);
+}
+
 /* Header Start */
 /* Navbar */
 #home {
@@ -162,6 +166,7 @@ p {
   text-align: center;
   font-weight: 500;
   margin-bottom: 1rem;
+  color: var(--dark-gray);
 }
 
 #clients .row {
@@ -178,19 +183,24 @@ p {
 
 /* Services Start */
 #services,
-#experience {
+#experience,
+#help,
+#projects {
   padding: 7rem 0;
 }
 
 #services h2,
-#experience h2 {
+#experience h2,
+#projects h2 {
   font-size: 46px;
   font-weight: 600;
   text-align: center;
+  color: var(--dark-gray);
 }
 
 #services .container>p,
-#experience .container>p {
+#experience .container>p,
+#projects>p {
   color: var(--light-sky-blue);
   font-size: 20px;
   margin: 20px 0 50px;
@@ -276,3 +286,73 @@ p {
 }
 
 /* Experiance End */
+
+/* Help Start */
+#help {
+  /* background-image: linear-gradient(#0478eb, #39a6f3); */
+  background-color: var(--dark-sky-blue);
+  color: #fff;
+  text-align: center;
+}
+
+#help h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+#help p {
+  display: inline;
+  font-size: 28px;
+  vertical-align: middle;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+#help p span {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* Help End */
+
+/* Projects Start */
+
+#projects {
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+#projects .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#projects .row .col .col-content {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 80%;
+  margin: auto;
+  transform: translateY(-50%);
+}
+
+#projects .row .col .col-content h3 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#projects .row .col .col-content p {
+  font-size: 14px;
+}
+
+#projects .row img {
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#projects .row img:hover {
+  filter: brightness(0.5);
+}
+
+/* Projects End */
