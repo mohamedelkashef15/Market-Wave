@@ -17,7 +17,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 5000px;
+  height: 7000px;
 }
 
 ul {
@@ -44,7 +44,6 @@ p {
   font-weight: 500;
   border-radius: 25px;
 }
-
 
 .btn-primary {
   background-color: var(--light-orange);
@@ -76,6 +75,10 @@ p {
 
 .text-primary {
   color: var(--light-orange);
+}
+
+.text-secondary {
+  color: var(--light-sky-blue);
 }
 
 /* Header Start */
@@ -185,13 +188,15 @@ p {
 #services,
 #experience,
 #help,
-#projects {
+#projects,
+#work {
   padding: 7rem 0;
 }
 
 #services h2,
 #experience h2,
-#projects h2 {
+#projects h2,
+#work h2 {
   font-size: 46px;
   font-weight: 600;
   text-align: center;
@@ -200,7 +205,8 @@ p {
 
 #services .container>p,
 #experience .container>p,
-#projects>p {
+#projects>p,
+#work .container>p {
   color: var(--light-sky-blue);
   font-size: 20px;
   margin: 20px 0 50px;
@@ -236,7 +242,8 @@ p {
 
 /* Services End */
 /* Experiance Start */
-#experience {
+#experience,
+#work {
   background-color: var(--light-gray);
 }
 
@@ -319,7 +326,6 @@ p {
 /* Projects Start */
 
 #projects {
-  background-color: var(--light-gray);
   text-align: center;
 }
 
@@ -356,3 +362,32 @@ p {
 }
 
 /* Projects End */
+
+/* Work Start */
+#work .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+#work .row .col:not(:nth-child(3), :nth-child(4)) {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+#work .row .col span {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+#work .row .col h3 {
+  font-size: 20px;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+#work .row img {
+  width: 100%;
+}
+
+/* Work End */
