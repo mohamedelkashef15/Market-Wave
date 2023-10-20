@@ -28,6 +28,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.6;
+}
+
 /* Utility Classes */
 .container {
   max-width: 1200px;
@@ -190,7 +194,7 @@ a {
 #services .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 1rem;
+  column-gap: 2rem;
 }
 
 #services .row img {
@@ -205,7 +209,8 @@ a {
 }
 
 #services .row p {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  color: #545559;
 }
 
 #services .row a {
