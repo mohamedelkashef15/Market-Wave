@@ -17,6 +17,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  height: 10000px;
 }
 
 ul {
@@ -29,6 +30,12 @@ a {
 
 p {
   line-height: 1.6;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 /* Utility Classes */
@@ -88,34 +95,34 @@ p {
   background-image: linear-gradient(to right, var(--dark-blue) 50%, #173f67);
 }
 
-#home nav {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 110px;
 }
 
-#home nav img {
+nav img {
   max-width: 250px;
 }
 
-#home nav ul {
+nav ul {
   display: flex;
 }
 
-#home nav ul li:not(:last-child) a {
+nav ul li:not(:last-child) a {
   margin: 0 15px;
   color: #fff;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-#home nav ul li:not(:last-child) a:hover {
+nav ul li:not(:last-child) a:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--light-orange);
 }
 
-#home nav ul li:last-child a {
+nav ul li:last-child a {
   display: inline;
   margin-left: 15px;
 }
@@ -167,7 +174,6 @@ p {
 #clients h2 {
   font-size: 20px;
   text-align: center;
-  font-weight: 500;
   margin-bottom: 1rem;
   color: var(--dark-gray);
 }
@@ -190,7 +196,9 @@ p {
 #help,
 #projects,
 #work,
-#blog {
+#blog,
+#story,
+#team {
   padding: 7rem 0;
 }
 
@@ -198,7 +206,9 @@ p {
 #experience h2,
 #projects h2,
 #work h2,
-#blog h2 {
+#blog h2,
+#story h2,
+#team h2 {
   font-size: 46px;
   font-weight: 600;
   text-align: center;
@@ -209,7 +219,9 @@ p {
 #experience .container>p,
 #projects>p,
 #work .container>p,
-#blog>p {
+#blog>p,
+#story .container>p,
+#team .container>p {
   color: var(--light-sky-blue);
   font-size: 20px;
   margin: 20px 0 50px;
@@ -229,7 +241,6 @@ p {
 
 #services .row h3 {
   font-size: 25px;
-  font-weight: 500;
   margin-bottom: 20px;
   color: var(--dark-gray);
 }
@@ -246,11 +257,13 @@ p {
 /* Services End */
 /* Experiance Start */
 #experience,
-#work {
+#work,
+#team {
   background-color: var(--light-gray);
 }
 
-#experience .row {
+#experience .row,
+#team .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -264,7 +277,6 @@ p {
 
 #experience .row h3 {
   font-size: 22px;
-  font-weight: 500;
   margin: 1.5rem 0;
 }
 
@@ -282,7 +294,6 @@ p {
 
 #experience .row .col-3 .col-content h4 {
   font-size: 20px;
-  font-weight: 500;
 }
 
 #experience .row .col-3 .col-content p {
@@ -307,7 +318,6 @@ p {
 
 #help h2 {
   font-size: 40px;
-  font-weight: 500;
   margin-bottom: 3rem;
 }
 
@@ -350,7 +360,6 @@ p {
 
 #projects .row .col .col-content h3,
 #blog .row .col .col-content h3 {
-  font-weight: 500;
   margin-bottom: 15px;
 }
 
@@ -390,14 +399,37 @@ p {
   font-weight: 600;
 }
 
+#work .row .col i {
+  color: var(--light-sky-blue);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
 #work .row .col h3 {
   font-size: 20px;
   margin: 1rem 0;
-  font-weight: 500;
 }
 
 #work .row img {
   width: 100%;
+}
+
+#work .plan {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+#work .plan h3 {
+  color: var(--dark-gray);
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+#work .plan p {
+  font-size: 14px;
+  color: var(--dark-gray);
 }
 
 /* Work End */
@@ -414,7 +446,6 @@ p {
 }
 
 #footer .row .col h3 {
-  font-weight: 500;
   color: var(--light-sky-blue);
   margin-bottom: 20px;
 }
@@ -455,4 +486,95 @@ p {
 /* Footer End */
 /* HOME PAGE END */
 /* About page Start */
+#about {
+  background-image: linear-gradient(to right, var(--dark-blue) 50%, #173f67);
+  height: 50vh;
+}
 
+#about .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#about .about-content h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#about .about-content p {
+  font-size: 20px;
+  color: var(--light-sky-blue);
+}
+
+/* Story start */
+#story .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  align-items: center;
+}
+
+#story .row img {
+  width: 100%;
+}
+
+#story .row h3 {
+  font-size: 28px;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+#story .row p {
+  font-size: 14px;
+}
+
+#story .states {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#story .states .number {
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--light-sky-blue);
+}
+
+/* Story End */
+
+/* Team Start */
+#team .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+#team .row .col img {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+#team .row .col div {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+#team .row .col div p {
+  color: var(--light-sky-blue);
+  margin-top: 10px;
+
+}
+
+#team .row .col:hover img {
+  filter: brightness(0.7);
+}
+
+
+/* Team End */
