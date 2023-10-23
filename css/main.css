@@ -17,7 +17,10 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  height: 10000px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -414,20 +417,20 @@ nav ul li:last-child a {
   width: 100%;
 }
 
-#work .plan {
+.quote {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
+  column-gap: 3rem;
   margin-top: 3rem;
 }
 
-#work .plan h3 {
+.quote h3 {
   color: var(--dark-gray);
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1.5;
 }
 
-#work .plan p {
+.quote p {
   font-size: 14px;
   color: var(--dark-gray);
 }
@@ -485,13 +488,15 @@ nav ul li:last-child a {
 
 /* Footer End */
 /* HOME PAGE END */
-/* About page Start */
-#about {
+/** About page Start */
+#about-page,
+#team-page {
   background-image: linear-gradient(to right, var(--dark-blue) 50%, #173f67);
   height: 50vh;
 }
 
-#about .about-content {
+#about-page .about-content,
+#team-page .team-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -499,13 +504,15 @@ nav ul li:last-child a {
   margin-top: 2rem;
 }
 
-#about .about-content h1 {
+#about-page .about-content h1,
+#team-page .team-content h1 {
   color: #fff;
   font-size: 45px;
   font-weight: 600;
 }
 
-#about .about-content p {
+#about-page .about-content p,
+#team-page .team-content p {
   font-size: 20px;
   color: var(--light-sky-blue);
 }
@@ -548,7 +555,8 @@ nav ul li:last-child a {
 }
 
 /* Story End */
-
+/* * About Page End */
+/** Team Page Start  */
 /* Team Start */
 #team .row {
   display: grid;
@@ -558,6 +566,7 @@ nav ul li:last-child a {
 
 #team .row .col img {
   width: 100%;
+  height: 350px;
   transition: all 0.3s ease;
 }
 
@@ -568,13 +577,17 @@ nav ul li:last-child a {
 
 #team .row .col div p {
   color: var(--light-sky-blue);
-  margin-top: 10px;
+  margin: 12px 0;
+}
 
+#team .row .col div a {
+  padding: 5px 15px;
+  font-size: 14px;
 }
 
 #team .row .col:hover img {
   filter: brightness(0.7);
 }
 
-
 /* Team End */
+/** Team Page End  */
