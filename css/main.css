@@ -152,16 +152,25 @@ nav ul li:last-child a {
   margin: 2rem 0 4rem;
 }
 
-#home .header-content .row .col>a {
+#home .header-content .row .col>a,
+#brand-page .brand-content .row .col a:last-child,
+#social-page .social-content .row .col a:last-child,
+#project-page .project-content .row .col a:last-child {
   font-size: 18px;
   font-weight: 500;
 }
 
-#home .header-content .row .col>a:hover {
+#home .header-content .row .col>a:hover,
+#brand-page .brand-content .row .col a:last-child,
+#social-page .social-content .row .col a:last-child,
+#project-page .project-content .row .col a:last-child {
   background: transparent;
 }
 
-#home .header-content .row .col a:last-child {
+#home .header-content .row .col a:last-child,
+#brand-page .brand-content .row .col a:last-child,
+#social-page .social-content .row .col a:last-child,
+#project-page .project-content .row .col a:last-child {
   color: var(--light-sky-blue);
   margin-left: 30px;
   padding-bottom: 8px;
@@ -202,7 +211,7 @@ nav ul li:last-child a {
 /* Services Start */
 #services,
 #experience,
-#help,
+#ask,
 #projects,
 #work,
 #blog,
@@ -210,7 +219,9 @@ nav ul li:last-child a {
 #team,
 #all-blogs,
 #info,
-#call {
+#contact-us,
+#help,
+#partnerships {
   padding: 7rem 0;
 }
 
@@ -221,7 +232,9 @@ nav ul li:last-child a {
 #blog h2,
 #story h2,
 #team h2,
-#call h2 {
+#contact-us h2,
+#help h2,
+#partnerships h2 {
   font-size: 46px;
   font-weight: 600;
   text-align: center;
@@ -235,7 +248,9 @@ nav ul li:last-child a {
 #blog>p,
 #story .container>p,
 #team .container>p,
-#call>p {
+#contact-us>p,
+#help .container>p,
+#partnerships .container>p {
   color: var(--light-sky-blue);
   font-size: 20px;
   margin: 20px 0 50px;
@@ -270,7 +285,8 @@ nav ul li:last-child a {
 #work,
 #team,
 #all-blogs,
-#info {
+#info,
+#partnerships {
   background-color: var(--light-gray);
 }
 
@@ -316,20 +332,20 @@ nav ul li:last-child a {
 
 /* Experiance End */
 
-/* Help Start */
-#help {
+/* ask Start */
+#ask {
   /* background-image: linear-gradient(#0478eb, #39a6f3); */
   background-color: var(--dark-sky-blue);
   color: #fff;
   text-align: center;
 }
 
-#help h2 {
+#ask h2 {
   font-size: 40px;
   margin-bottom: 3rem;
 }
 
-#help p {
+#ask p {
   display: inline;
   font-size: 28px;
   vertical-align: middle;
@@ -337,12 +353,12 @@ nav ul li:last-child a {
   font-weight: 600;
 }
 
-#help p span {
+#ask p span {
   font-size: 22px;
   margin-right: 10px;
 }
 
-/* Help End */
+/* ask End */
 
 /* Projects Start */
 
@@ -660,37 +676,170 @@ nav ul li:last-child a {
 }
 
 /* Info End */
-/* Call Start */
-#call {
+/* contact-us Start */
+#contact-us {
   max-width: 700px;
   margin: auto;
 }
 
-#call div {
+#contact-us div {
   margin: 30px 0;
 }
 
-#call label {
+#contact-us label {
   font-size: 12px;
 }
 
-#call label::after {
+#contact-us label::after {
   content: " *";
   color: red;
 }
 
-#call input,
-#call textarea {
+#contact-us input,
+#contact-us textarea {
   display: block;
   width: 100%;
   padding: 10px;
   margin-top: 5px;
 }
 
-#call .btn {
+#contact-us .btn {
   width: 100%;
   cursor: pointer;
 }
 
-/* Call End */
+/* contact-us End */
 /**  Contact Page End*/
+/** Brand page Start */
+#brand-page,
+#social-page,
+#project-page {
+  background-image: linear-gradient(to right, var(--dark-blue) 50%, #173f67);
+  height: 80vh;
+}
+
+#brand-page .brand-content .row,
+#social-page .social-content .row,
+#project-page .project-content .row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  column-gap: 8rem;
+  height: calc(65vh - 110px);
+}
+
+#brand-page .brand-content .row .col h1,
+#social-page .social-content .row .col h1,
+#project-page .project-content .row .col h1 {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#brand-page .brand-content .row .col p,
+#social-page .social-content .row .col p,
+#project-page .project-content .row .col p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* help start */
+
+#help .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+#help .row .col {
+  display: flex;
+}
+
+#help .row .col i {
+  color: var(--light-sky-blue);
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+#help .row .col h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#help .row .col p {
+  line-height: 1.8;
+}
+
+/* help end */
+
+/* Partnerships Start */
+#partnerships .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  text-align: center;
+  column-gap: 5rem;
+}
+
+#partnerships .row .plan:not(:last-child) .plan-heading {
+  background-color: var(--light-sky-blue);
+}
+
+#partnerships .row .plan:last-child .plan-heading {
+  background-color: var(--light-orange);
+}
+
+#partnerships .row .plan .plan-heading {
+  color: #fff;
+  padding: 1.5rem;
+}
+
+#partnerships .row .plan .plan-content {
+  background-color: #fff;
+  padding: 3rem;
+}
+
+#partnerships .row .plan .plan-content .price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#partnerships .row .plan .plan-content span:nth-child(2) {
+  font-size: 75px;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+#partnerships .row .plan .plan-content span:nth-child(1),
+#partnerships .row .plan .plan-content span:nth-child(3) {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 5px;
+}
+
+#partnerships .row .plan .plan-content>p {
+  color: var(--light-sky-blue);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#partnerships .row .plan .plan-content .features {
+  margin-top: 2rem;
+}
+
+#partnerships .row .plan .plan-content .features p {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+#partnerships .row .plan .plan-content .features i {
+  margin-right: 10px;
+  color: var(--light-sky-blue);
+}
+
+/* Partnerships End */
+
+/** Brand page End */
