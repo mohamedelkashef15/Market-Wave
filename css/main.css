@@ -17,6 +17,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
@@ -47,6 +48,7 @@ h4 {
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 2rem;
 }
 
 .btn {
@@ -64,6 +66,11 @@ h4 {
   transition: all 0.3s ease;
 }
 
+.btn-primary:hover {
+  background: transparent;
+  color: var(--light-orange);
+}
+
 .btn-secondary {
   background-color: var(--light-sky-blue);
   color: #fff;
@@ -75,9 +82,11 @@ h4 {
   background-color: var(--dark-sky-blue);
 }
 
-.btn-primary:hover {
-  background: transparent;
-  color: var(--light-orange);
+.btn-third {
+  color: var(--light-sky-blue);
+  margin-left: 30px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--light-sky-blue);
 }
 
 .active {
@@ -166,17 +175,6 @@ nav ul li:last-child a {
 #social-page .social-content .row .col a:last-child,
 #project-page .project-content .row .col a:last-child {
   background: transparent;
-}
-
-/*! Add btn third style */
-#home .header-content .row .col a:last-child,
-#brand-page .brand-content .row .col a:last-child,
-#social-page .social-content .row .col a:last-child,
-#project-page .project-content .row .col a:last-child {
-  color: var(--light-sky-blue);
-  margin-left: 30px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid var(--light-sky-blue);
 }
 
 /* Header End */
@@ -797,6 +795,10 @@ nav ul li:last-child a {
   padding: 1.5rem;
 }
 
+#partnerships .row .plan .plan-heading h3 {
+  color: #fff;
+}
+
 #partnerships .row .plan .plan-content {
   background-color: #fff;
   padding: 3rem;
@@ -967,3 +969,138 @@ nav ul li:last-child a {
 }
 
 /** blog posts inner end */
+
+/** Responsive design Start */
+@media (max-width: 950px) {
+
+  .btn,
+  #home .header-content .row .col>a,
+  #brand-page .brand-content .row .col a:last-child,
+  #social-page .social-content .row .col a:last-child,
+  #project-page .project-content .row .col a:last-child {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .btn-third {
+    margin-left: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 1rem 0;
+    height: auto;
+  }
+
+  nav ul {
+    margin-top: 30px;
+  }
+
+  nav ul li:not(:last-child) a,
+  nav ul li:last-child a {
+    margin: 0 5px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+
+  #home .header-content .row .col h1 {
+    font-size: 40px;
+  }
+
+  #home .header-content .row .col p {
+    font-size: 20px;
+  }
+
+  #experience .row,
+  #team .row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  #experience .row .col-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+
+  #ask h2 {
+    font-size: 28px;
+  }
+
+  #ask p {
+    font-size: 16px;
+  }
+
+  #projects .row,
+  #blog .row,
+  #work .row,
+  #footer .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #footer .row {
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  nav ul li:not(:last-child) a,
+  nav ul li:last-child a {
+    font-size: 12px;
+  }
+
+  #home .header-content .row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  #home .header-content .row img {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 80%;
+    margin: auto;
+  }
+
+  #clients .row {
+    flex-direction: column;
+  }
+
+  #clients .row img,
+  #services .row img {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  #services .row,
+  #experience .row,
+  #team .row,
+  #projects .row,
+  #blog .row,
+  #work .row,
+  #footer .row {
+    grid-template-columns: 1fr;
+  }
+
+  .quote {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  #experience .row .col-3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  }
+}
+
+/** Responsive design End */
