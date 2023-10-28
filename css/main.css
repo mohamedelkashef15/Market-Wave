@@ -223,7 +223,8 @@ nav ul li:last-child a {
 #contact-us,
 #help,
 #partnerships,
-#person-cv {
+#person-cv,
+#post {
   padding: 7rem 0;
 }
 
@@ -343,6 +344,7 @@ nav ul li:last-child a {
 #ask h2 {
   font-size: 40px;
   margin-bottom: 3rem;
+  color: #fff;
 }
 
 #ask p {
@@ -599,7 +601,8 @@ nav ul li:last-child a {
 /* Team End */
 /** Team Page End  */
 /**  Blog Page Start*/
-#all-blogs .row {
+#all-blogs .row,
+#post .row {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 5rem;
@@ -918,3 +921,49 @@ nav ul li:last-child a {
 }
 
 /* ** persons pages End */
+
+/** blog posts inner start */
+#post img {
+  max-width: 100%;
+}
+
+#post .row .post-content h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 3rem 0;
+}
+
+#post .row .post-content p {
+  margin: 20px 0;
+}
+
+#post .row .social {
+  position: sticky;
+  top: 10px;
+  height: 0;
+}
+
+#post .row .social h3 {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+#post .row .social .social-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+}
+
+#post .row .social .social-links a {
+  border: 1px solid var(--light-sky-blue);
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--light-sky-blue);
+  text-align: center;
+  margin-right: 25px;
+}
+
+/** blog posts inner end */
