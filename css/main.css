@@ -1052,6 +1052,10 @@ nav ul li:last-child a {
   }
 
   /* team pages */
+  #person-page {
+    height: auto;
+  }
+
   #person-page .person-content {
     flex-direction: column;
     justify-content: center;
@@ -1060,8 +1064,9 @@ nav ul li:last-child a {
   }
 
   #person-page .person-content img {
+    display: block;
     margin-right: 0;
-    max-width: 250px;
+    width: 150px;
   }
 
   /* services pages */
@@ -1220,11 +1225,6 @@ nav ul li:last-child a {
   #help h2,
   #partnerships h2 {
     font-size: 28px;
-  }
-
-  #person-page {
-    height: auto;
-    padding-bottom: 3rem;
   }
 
   /* services pages */
