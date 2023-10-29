@@ -678,6 +678,7 @@ nav ul li:last-child a {
 /* contact-us Start */
 #contact-us {
   max-width: 700px;
+  padding: 7rem 2rem;
   margin: auto;
 }
 
@@ -859,7 +860,6 @@ nav ul li:last-child a {
 }
 
 #person-page .person-content img {
-  display: block;
   max-width: 350px;
   margin-right: 5rem;
 }
@@ -973,6 +973,7 @@ nav ul li:last-child a {
 /** Responsive design Start */
 @media (max-width: 950px) {
 
+  /* Home page */
   .btn,
   #home .header-content .row .col>a,
   #brand-page .brand-content .row .col a:last-child,
@@ -1004,11 +1005,17 @@ nav ul li:last-child a {
     border: none;
   }
 
-  #home .header-content .row .col h1 {
+  #home .header-content .row .col h1,
+  #brand-page .brand-content .row .col h1,
+  #social-page .social-content .row .col h1,
+  #project-page .project-content .row .col h1 {
     font-size: 40px;
   }
 
-  #home .header-content .row .col p {
+  #home .header-content .row .col p,
+  #brand-page .brand-content .row .col p,
+  #social-page .social-content .row .col p,
+  #project-page .project-content .row .col p {
     font-size: 20px;
   }
 
@@ -1041,6 +1048,62 @@ nav ul li:last-child a {
   }
 
   #footer .row {
+    row-gap: 2rem;
+  }
+
+  /* team pages */
+  #person-page .person-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 2rem;
+  }
+
+  #person-page .person-content img {
+    margin-right: 0;
+    max-width: 250px;
+  }
+
+  /* services pages */
+  #brand-page .brand-content .row,
+  #social-page .social-content .row,
+  #project-page .project-content .row {
+    column-gap: 3rem;
+  }
+
+  #partnerships .row {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  /* all blogs start */
+  #all-blogs .row,
+  #post .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  #all-blogs .row .main-posts .post .post-content {
+    width: 100%;
+    transform: translateY(0%);
+  }
+
+  #all-blogs .row img {
+    display: block;
+    width: 100%;
+  }
+
+  #post .row .social {
+    position: static;
+    height: auto;
+  }
+
+  #blog-page .blog-content h1 {
+    font-size: 20px;
+  }
+
+  #info .row {
+    grid-template-columns: 1fr;
     row-gap: 2rem;
   }
 }
@@ -1100,6 +1163,93 @@ nav ul li:last-child a {
     grid-column-end: 1;
     grid-row-start: 5;
     grid-row-end: 5;
+  }
+
+  #about-page .about-content h1,
+  #team-page .team-content h1,
+  #contact-page .contact-content h1,
+  #person-page .person-content h1,
+  #home .header-content .row .col h1,
+  #brand-page .brand-content .row .col h1,
+  #social-page .social-content .row .col h1,
+  #project-page .project-content .row .col h1 {
+    font-size: 35px;
+  }
+
+  #about-page .about-content p,
+  #team-page .team-content p,
+  #blog-page .blog-content p,
+  #contact-page .contact-content p,
+  #services .container>p,
+  #experience .container>p,
+  #projects>p,
+  #work .container>p,
+  #blog>p,
+  #story .container>p,
+  #team .container>p,
+  #contact-us>p,
+  #help .container>p,
+  #partnerships .container>p,
+  #home .header-content .row .col p,
+  #brand-page .brand-content .row .col p,
+  #social-page .social-content .row .col p,
+  #project-page .project-content .row .col p {
+    font-size: 14px;
+  }
+
+  #story .row,
+  #person-cv .row,
+  #help .row,
+  #partnerships .row {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  #story .states {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  #experience h2,
+  #projects h2,
+  #work h2,
+  #blog h2,
+  #story h2,
+  #team h2,
+  #contact-us h2,
+  #help h2,
+  #partnerships h2 {
+    font-size: 28px;
+  }
+
+  #person-page {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  /* services pages */
+  #brand-page,
+  #social-page,
+  #project-page {
+    height: auto;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  #brand-page .brand-content .row,
+  #social-page .social-content .row,
+  #project-page .project-content .row {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #brand-page .brand-content .row img,
+  #social-page .social-content .row img,
+  #project-page .project-content .row img {
+    display: block;
+    max-width: 200px;
   }
 }
 
