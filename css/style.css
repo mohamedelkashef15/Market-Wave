@@ -3,7 +3,7 @@
 :root {
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
-  --bg-light-gray: #f4f4f4;
+  --bg-white: #f4f4f4;
   --dark-gray: #222222;
   --light-orange: #ff7f22;
   --dark-blue: #081C3A;
@@ -71,9 +71,9 @@ h4 {
 }
 
 .btn-secondary {
-  background-color: var(--dark-sky-blue);
+  background-color: var(--light-sky-blue);
   color: #fff;
-  border: 2px solid var(--dark-sky-blue);
+  border: 2px solid var(--light-sky-blue);
   transition: all 0.3s ease;
 }
 
@@ -118,6 +118,10 @@ h4 {
 
 .p-7 {
   padding: 7rem 0;
+}
+
+.bg-white {
+  background-color: var(--bg-white);
 }
 
 /* HOME Page Start */
@@ -201,7 +205,7 @@ nav ul li:last-child a {
 /* Clients Start */
 #clients {
   padding: 3rem 0;
-  background-color: var(--bg-light-gray);
+  background-color: var(--bg-white);
 }
 
 #clients h2 {
@@ -227,23 +231,7 @@ nav ul li:last-child a {
 /* Clients End */
 
 /* Services Start */
-/* #services,
-#experience,
-#ask,
-#projects,
-#work,
-#blog,
-#story,
-#team,
-#all-blogs,
-#info,
-#contact-us,
-#help,
-#partnerships,
-#person-cv,
-#post {
-  padding: 7rem 0;
-} */
+
 
 #services .row {
   display: grid;
@@ -274,7 +262,7 @@ nav ul li:last-child a {
 #all-blogs,
 #info,
 #partnerships {
-  background-color: var(--bg-light-gray);
+  background-color: var(--bg-white);
 }
 
 #experience .row,
@@ -689,6 +677,7 @@ nav ul li:last-child a {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
+  border: 1px solid #ddd;
 }
 
 #contact-us .btn {
@@ -824,7 +813,7 @@ nav ul li:last-child a {
 
 #partnerships .row .plan .plan-content .features p {
   margin-bottom: 30px;
-  border-bottom: 1px solid var(--bg-light-gray);
+  border-bottom: 1px solid var(--bg-white);
 }
 
 #partnerships .row .plan .plan-content .features i {
