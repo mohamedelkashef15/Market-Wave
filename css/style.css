@@ -3,6 +3,7 @@
 :root {
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
+  /* edit */
   --new-dark-blue: #1D8CFC;
   --light-gray: #f4f4f4;
   --dark-gray: #222222;
@@ -73,7 +74,7 @@ h4 {
 }
 
 .btn-secondary {
-  background-color: var(--light-sky-blue);
+  background-color: var(--new-dark-blue);
   color: #fff;
   border: 2px solid var(--light-sky-blue);
   transition: all 0.3s ease;
