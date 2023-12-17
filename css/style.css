@@ -4,7 +4,7 @@
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
   /* edit */
-  --new-dark-blue: #1287FD;
+  --new-dark-blue: #0273E3;
   --light-gray: #f4f4f4;
   --dark-gray: #222222;
   --light-orange: #ff7f22;
@@ -77,7 +77,7 @@ h4 {
 .btn-secondary {
   background-color: var(--new-dark-blue);
   color: #fff;
-  border: 2px solid var(--light-sky-blue);
+  border: 2px solid var(--new-dark-blue);
   transition: all 0.3s ease;
 }
 
