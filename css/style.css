@@ -95,6 +95,7 @@ h4 {
 
 .title {
   text-align: center;
+  padding: 0 1rem;
 }
 
 .title h2 {
@@ -481,7 +482,6 @@ nav ul li:last-child a {
 #blog-page,
 #contact-page {
   background-image: linear-gradient(to right, var(--dark-blue) 50%, #173f67);
-  height: 45vh;
 }
 
 #about-page .about-content,
@@ -492,7 +492,7 @@ nav ul li:last-child a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
+  min-height: 30vh;
 }
 
 #about-page .about-content h1,
