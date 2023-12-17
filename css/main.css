@@ -3,6 +3,7 @@
 :root {
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
+  --new-dark-blue: #1D8CFC;
   --light-gray: #f4f4f4;
   --dark-gray: #222222;
   --light-orange: #ff7f22;
@@ -83,7 +84,8 @@ h4 {
 }
 
 .btn-third {
-  color: var(--light-sky-blue);
+  /* color: var(--light-sky-blue); */
+  color: var(--new-dark-blue);
   margin-left: 30px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--light-sky-blue);
