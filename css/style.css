@@ -4,11 +4,12 @@
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
   /* edit */
-  --new-dark-blue: #1D8CFC;
+  --new-dark-blue: #1287FD;
   --light-gray: #f4f4f4;
   --dark-gray: #222222;
   --light-orange: #ff7f22;
-  --dark-blue: #0A2540;
+  /* --dark-blue: #0A2540; */
+  --dark-blue: #081C3A;
 }
 
 * {
