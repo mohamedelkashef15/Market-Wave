@@ -3,10 +3,10 @@
 :root {
   --light-sky-blue: #1091Ef;
   --dark-sky-blue: #0478eb;
+  --dark-blue: #081C3A;
   --bg-white: #f4f4f4;
   --dark-gray: #222222;
   --light-orange: #ff7f22;
-  --dark-blue: #081C3A;
 }
 
 * {
@@ -117,7 +117,7 @@ h4 {
   color: var(--light-sky-blue);
 }
 
-.p-7 {
+.pad-7 {
   padding: 7rem 0;
 }
 
@@ -169,7 +169,7 @@ h4 {
 }
 
 /* Header Content */
-#home .header-content .row {
+#home .home-content {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   justify-content: center;
@@ -177,30 +177,30 @@ h4 {
   min-height: calc(90vh - 110px);
 }
 
-#home .header-content .row .col h1 {
+#home .home-content .col h1 {
   font-size: 70px;
   font-weight: 600;
   color: #fff;
 }
 
-#home .header-content .row .col p {
+#home .home-content .col p {
   font-size: 25px;
   color: #fff;
   margin: 1rem 0 4rem;
 }
 
-#home .header-content .row .btn,
-#brand-page .brand-content .row .btn,
-#social-page .social-content .row .btn,
-#project-page .project-content .row .btn {
+#home .home-content .btn,
+#brand-page .brand-content .btn,
+#social-page .social-content .btn,
+#project-page .project-content .btn {
   font-size: 16px;
   font-weight: 500;
 }
 
-#home .header-content .row .btn:hover,
-#brand-page .brand-content .row .btn:hover,
-#social-page .social-content .row .btn:hover,
-#project-page .project-content .row .btn:hover {
+#home .home-content .btn:hover,
+#brand-page .brand-content .btn:hover,
+#social-page .social-content .btn:hover,
+#project-page .project-content .btn:hover {
   background: transparent;
 }
 
@@ -209,7 +209,6 @@ h4 {
 /* Clients Start */
 #clients {
   padding: 3rem 0;
-  background-color: var(--bg-white);
 }
 
 #clients h2 {
@@ -219,7 +218,8 @@ h4 {
 }
 
 #clients .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: space-between;
   align-items: center;
 }
@@ -235,8 +235,6 @@ h4 {
 /* Clients End */
 
 /* Services Start */
-
-
 #services .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -250,25 +248,15 @@ h4 {
 
 #services .row h3 {
   font-size: 25px;
-  margin-bottom: 20px;
 }
 
 #services .row p {
-  margin-bottom: 3rem;
+  margin: 20px 0 3rem;
   color: #545559;
 }
 
 /* Services End */
 /* Experiance Start */
-#experience,
-#work,
-#team,
-#all-blogs,
-#info,
-#partnerships {
-  background-color: var(--bg-white);
-}
-
 #experience .row,
 #team .row {
   display: grid;
@@ -953,7 +941,7 @@ h4 {
 
   /* Home page */
   .btn,
-  #home .header-content .row .col>a,
+  #home .home-content .row .col>a,
   #brand-page .brand-content .row .col a:last-child,
   #social-page .social-content .row .col a:last-child,
   #project-page .project-content .row .col a:last-child {
@@ -982,14 +970,14 @@ h4 {
     border: none;
   }
 
-  #home .header-content .row .col h1,
+  #home .home-content .row .col h1,
   #brand-page .brand-content .row .col h1,
   #social-page .social-content .row .col h1,
   #project-page .project-content .row .col h1 {
     font-size: 40px;
   }
 
-  #home .header-content .row .col p,
+  #home .home-content .row .col p,
   #brand-page .brand-content .row .col p,
   #social-page .social-content .row .col p,
   #project-page .project-content .row .col p {
@@ -1101,14 +1089,14 @@ h4 {
     font-size: 12px;
   }
 
-  #home .header-content .row {
+  #home .home-content .row {
     grid-template-columns: 1fr;
     text-align: center;
     margin-top: 20px;
     padding: 2rem 0;
   }
 
-  #home .header-content .row img {
+  #home .home-content .row img {
     grid-row-start: 1;
     grid-row-end: 1;
     width: 80%;
@@ -1116,7 +1104,7 @@ h4 {
   }
 
   #clients .row {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   #clients .row img,
@@ -1152,7 +1140,7 @@ h4 {
   #team-page .team-content h1,
   #contact-page .contact-content h1,
   #person-page .person-content h1,
-  #home .header-content .row .col h1,
+  #home .home-content .row .col h1,
   #brand-page .brand-content .row .col h1,
   #social-page .social-content .row .col h1,
   #project-page .project-content .row .col h1 {
@@ -1173,7 +1161,7 @@ h4 {
   #contact-us>p,
   #help .container>p,
   #partnerships .container>p,
-  #home .header-content .row .col p,
+  #home .home-content .row .col p,
   #brand-page .brand-content .row .col p,
   #social-page .social-content .row .col p,
   #project-page .project-content .row .col p {
