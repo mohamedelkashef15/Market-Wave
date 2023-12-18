@@ -970,12 +970,12 @@ h4 {
     padding: 1rem 0;
   }
 
-  nav ul {
+  .navbar ul {
     margin-top: 30px;
   }
 
-  nav ul li:not(:last-child) a,
-  nav ul li:last-child a {
+  .navbar ul li:not(:last-child) a,
+  .navbar ul li:last-child a {
     margin: 0 5px;
     padding: 0;
     background-color: transparent;
@@ -1096,8 +1096,8 @@ h4 {
 
 @media (max-width: 600px) {
 
-  nav ul li:not(:last-child) a,
-  nav ul li:last-child a {
+  .navbar ul li:not(:last-child) a,
+  .navbar ul li:last-child a {
     font-size: 12px;
   }
 
