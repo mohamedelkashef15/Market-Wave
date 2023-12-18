@@ -144,23 +144,24 @@ h4 {
   max-width: 250px;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
 }
 
-nav ul li:not(:last-child) a {
+.navbar ul li:not(:last-child) a {
   margin: 0 15px;
   color: #fff;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-nav ul li:not(:last-child) a:hover {
+.navbar ul li:not(:last-child) a:hover {
   padding-bottom: 5px;
   border-bottom: 2px solid var(--light-orange);
 }
 
-nav ul li:last-child a {
+.navbar ul li:last-child a {
+  /* display: inline; */
   margin-left: 15px;
   font-weight: 500;
   padding: 8px 20px;
@@ -312,7 +313,6 @@ nav ul li:last-child a {
 
 /* ask Start */
 #ask {
-  /* background-image: linear-gradient(#0478eb, #39a6f3); */
   background-color: var(--dark-sky-blue);
   color: #fff;
   text-align: center;
@@ -1014,7 +1014,9 @@ nav ul li:last-child a {
   }
 
   #ask p {
+    display: block;
     font-size: 16px;
+    margin: 20px 0;
   }
 
   #projects .row,
