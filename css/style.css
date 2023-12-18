@@ -225,7 +225,7 @@ h4 {
 }
 
 #clients .row img,
-#experience .row .col-3 img,
+#experience .row .item-3 img,
 #work .row img,
 #story .row img,
 #all-blogs .row img {
@@ -275,23 +275,23 @@ h4 {
   margin: 1.5rem 0;
 }
 
-#experience .row .col-3 {
+#experience .row .item-3 {
   background-color: #fff;
   grid-column-start: 3;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 
-#experience .row .col-3 .col-content {
+#experience .row .item-3 .item-content {
   text-align: center;
   padding: 3rem;
 }
 
-#experience .row .col-3 .col-content h4 {
+#experience .row .item-3 .item-content h4 {
   font-size: 20px;
 }
 
-#experience .row .col-3 .col-content p {
+#experience .row .item-3 .item-content p {
   color: var(--light-sky-blue);
   margin: 10px 0;
   font-size: 18px;
