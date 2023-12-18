@@ -306,6 +306,12 @@ h4 {
   text-align: center;
 }
 
+#ask .ask-content {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
 #ask h2 {
   font-size: 40px;
   margin-bottom: 3rem;
