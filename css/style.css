@@ -319,7 +319,7 @@ h4 {
 }
 
 #ask p {
-  display: inline;
+  display: inline-block;
   font-size: 28px;
   vertical-align: middle;
   margin-right: 1rem;
@@ -381,23 +381,23 @@ h4 {
   gap: 2rem;
 }
 
-#work .row .col:not(:nth-child(3), :nth-child(4)) {
+#work .row .item {
   background-color: #fff;
   padding: 2rem;
 }
 
-#work .row .col span {
+#work .row .item span {
   font-size: 35px;
   font-weight: 600;
 }
 
-#work .row .col i {
+#work .row .item i {
   color: var(--light-sky-blue);
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-#work .row .col h3 {
+#work .row .item h3 {
   font-size: 20px;
   margin: 1rem 0;
 }
