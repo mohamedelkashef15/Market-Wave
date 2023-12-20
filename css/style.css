@@ -528,10 +528,9 @@ h4 {
   margin-top: 3rem;
 }
 
-#story .states .number {
+#story .states span {
   font-size: 50px;
   font-weight: 600;
-  color: var(--light-sky-blue);
 }
 
 /* Story End */
