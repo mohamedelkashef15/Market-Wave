@@ -540,12 +540,13 @@ h4 {
 #team .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
   text-align: center;
 }
 
 #team .row .col img {
+  display: block;
   width: 100%;
-
   transition: all 0.3s ease;
 }
 
