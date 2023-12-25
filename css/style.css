@@ -911,24 +911,24 @@ h4 {
   margin: 20px 0;
 }
 
-#post .row .social {
+#post .row .share {
   position: sticky;
   top: 10px;
   height: 0;
 }
 
-#post .row .social h3 {
+#post .row .share h3 {
   font-size: 20px;
   margin-bottom: 2rem;
 }
 
-#post .row .social .social-links {
+#post .row .share .social-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1rem;
 }
 
-#post .row .social .social-links a {
+#post .row .share .social-links a {
   border: 1px solid var(--light-sky-blue);
   padding: 10px;
   border-radius: 20px;
