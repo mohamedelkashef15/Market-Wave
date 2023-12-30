@@ -275,8 +275,7 @@ h4 {
 #experience .row .item-3 {
   background-color: #fff;
   grid-column-start: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: 1/3;
 }
 
 #experience .row .item-3 .item-content {
@@ -793,18 +792,10 @@ h4 {
 /** Contact Page End  */
 
 /* Responsive Start */
-@media (max-width: 950px) {
-  .btn {
-    padding: 5px 10px;
-  }
-
-  .btn-third {
-    margin-left: 10px;
-  }
-
+@media(max-width: 950px) {
   .navbar {
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1rem;
   }
 
   .navbar .logo {
@@ -816,13 +807,8 @@ h4 {
   }
 
   .navbar ul li:last-child a {
-    margin-left: 5px;
+    margin: 0 5px;
     padding: 5px 8px;
-  }
-
-  .navbar ul li:not(:last-child) a,
-  .navbar ul li:last-child a {
-    font-size: 12px;
   }
 
   #home .home-content h1 {
@@ -831,6 +817,14 @@ h4 {
 
   #home .home-content p {
     font-size: 16px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+  }
+
+  .btn-third {
+    margin-left: 10px;
   }
 
   #home .home-content .btn,
@@ -874,6 +868,7 @@ h4 {
     margin-bottom: 20px;
   }
 
+  /* Inner pages */
   #story .row,
   #person-cv .row {
     grid-template-columns: 1fr;
@@ -898,13 +893,13 @@ h4 {
     text-align: center;
   }
 
-  #person-page .person-content h1 {
-    font-size: 32px;
-  }
-
   #person-page .person-content img {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  #person-page .person-content h1 {
+    font-size: 32px;
   }
 
   #brand-page .brand-content,
@@ -914,8 +909,8 @@ h4 {
   #post .row,
   #info .row {
     grid-template-columns: 1fr;
-    row-gap: 2rem;
     padding: 2rem 0;
+    row-gap: 2rem;
   }
 
   #brand-page .brand-content .col h1,
@@ -932,14 +927,11 @@ h4 {
   }
 
   #all-blogs .row .main-posts .post .post-content {
-    max-width: 100%;
-    padding: 2rem 1rem;
-    transform: translateY(0);
+    transform: translateY(0%);
     margin-bottom: 3rem;
   }
 
   #post .row .share {
-    position: static;
     height: 100%;
   }
 }
@@ -953,10 +945,14 @@ h4 {
     font-size: 16px;
   }
 
+  .navbar ul li a {
+    font-size: 12px;
+  }
+
   #home .home-content {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 3rem 0;
+    padding: 3rem 0 1rem;
   }
 
   #clients .row,
@@ -970,21 +966,19 @@ h4 {
     grid-template-columns: 1fr;
   }
 
-  #experience .row .item-3 {
-    grid-column: 1/1;
-    grid-row: 6/7;
-  }
-
   #clients .row img {
     max-width: 150px;
     margin: auto;
   }
 
+  #experience .row .item-3 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
   #ask .ask-content p {
     font-size: 22px;
   }
-
-  /* About page */
 
   #about-page .about-content h1,
   #team-page .team-content h1,
@@ -998,8 +992,8 @@ h4 {
   #blog-page .blog-content p,
   #contact-page .contact-content p {
     font-size: 16px;
-    color: var(--light-sky-blue);
   }
+
 }
 
 /* Responsive End */
